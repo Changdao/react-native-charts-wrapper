@@ -9,7 +9,7 @@ import {
 
 import moment from 'moment'
 
-import {BarChart, CombinedChart} from 'react-native-charts-wrapper';
+import {VolumeChart, CombinedChart} from 'react-native-charts-wrapper';
 
 
 const era = moment('1970-01-01', 'YYYY-MM-DD')
@@ -71,7 +71,7 @@ class StockChartScreen extends React.Component {
     }))
     var ma5Data = data.map(e => ({x: this.getIndexOfDay(e.date), y: e.ma5}))
     var ma15Data = data.map(e => ({x: this.getIndexOfDay(e.date), y: e.ma15}))
-    var volumeData = data.map(e => ({x: this.getIndexOfDay(e.date), y: e.volume}))
+    var volumeData = data.map(e => ({x: this.getIndexOfDay(e.date), y: e.volume, colorIndex:e.close>e.open?1:0}))
 
     return {
 
@@ -126,6 +126,7 @@ class StockChartScreen extends React.Component {
           label: 'volume',
           config: {
             drawValues: false,
+            colors:[processColor('#ff0000'),processColor('#00ff00')]
           }
         }]
 
@@ -279,7 +280,7 @@ class StockChartScreen extends React.Component {
           style={styles.price}/>
 
 
-        <BarChart
+        <VolumeChart
           data={this.state.volumeData}
           xAxis={this.state.volumeXAxis}
           onChange={(event) => this.handleChange(event)}

@@ -29,6 +29,7 @@ repositories {
     flatDir { dirs 'libs' }
     google()
     maven { url "https://jitpack.io" }
+    jcenter()
 }
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])

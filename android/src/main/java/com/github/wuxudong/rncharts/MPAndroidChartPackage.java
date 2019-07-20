@@ -14,6 +14,7 @@ import com.github.wuxudong.rncharts.charts.LineChartManager;
 import com.github.wuxudong.rncharts.charts.PieChartManager;
 import com.github.wuxudong.rncharts.charts.RadarChartManager;
 import com.github.wuxudong.rncharts.charts.ScatterChartManager;
+import com.github.wuxudong.rncharts.charts.VolumeChartManager;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -42,7 +43,8 @@ public class MPAndroidChartPackage implements ReactPackage {
                 new PieChartManager(),
                 new RadarChartManager(),
                 new ScatterChartManager(),
-                new CombinedChartManager()
+                new CombinedChartManager(),
+                new VolumeChartManager()
         );
     }
 
