@@ -445,7 +445,22 @@ public abstract class ChartBaseManager<T extends Chart, U extends Entry> extends
                     timeUnit = TimeUnit.valueOf(propMap.getString("timeUnit").toUpperCase());
                 }
                 axis.setValueFormatter(new DateFormatter(valueFormatterPattern, since, timeUnit));
-            } else {
+            } 
+            else if("stock".equals(valueFormatter)){
+                String valueFormatterPattern = propMap.getString("valueFormatterPattern");
+
+                long since = 0;
+                if (BridgeUtils.validate(propMap, ReadableType.Number, "since")) {
+                    since = (long) propMap.getDouble("since");
+                }
+                int timeUnit = 60000;
+
+                if (BridgeUtils.validate(propMap, ReadableType.String, "timeUnit")) {
+                    timeUnit = Integer.parseInt(propMap.getString("timeUnit").toUpperCase());
+                }
+                axis.setValueFormatter(new StockFormatter(valueFormatterPattern,since,timeUnit));
+            }
+            else {
                 axis.setValueFormatter(new CustomFormatter(valueFormatter));
             }
         } else if (BridgeUtils.validate(propMap, ReadableType.Array, "valueFormatter")) {

@@ -1,14 +1,52 @@
 {
-  "name": "react-native-charts-wrapper",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wuxudong/react-native-charts-wrapper.git"
+  "_from": "https://github.com/Changdao/react-native-charts-wrapper/releases/download/0.5.5b/react-native-charts-wrapper.tar.gz",
+  "_id": "react-native-charts-wrapper@0.5.5",
+  "_inBundle": false,
+  "_integrity": "sha512-dGdjxn2T8wAe4m/UaDAK89psU9TJ2PAjIBZVBlcMQadV4RtyM/A/mQRhdYPCdUSb1Uy5tEFm8e3uN6wdTLZ6YQ==",
+  "_location": "/react-native-charts-wrapper",
+  "_phantomChildren": {
+    "loose-envify": "1.4.0",
+    "object-assign": "4.1.1",
+    "prop-types": "15.7.2",
+    "scheduler": "0.13.6"
   },
-  "version": "0.5.5",
+  "_requested": {
+    "type": "remote",
+    "raw": "react-native-charts-wrapper@https://github.com/Changdao/react-native-charts-wrapper/releases/download/0.5.5b/react-native-charts-wrapper.tar.gz",
+    "name": "react-native-charts-wrapper",
+    "escapedName": "react-native-charts-wrapper",
+    "rawSpec": "https://github.com/Changdao/react-native-charts-wrapper/releases/download/0.5.5b/react-native-charts-wrapper.tar.gz",
+    "saveSpec": "https://github.com/Changdao/react-native-charts-wrapper/releases/download/0.5.5b/react-native-charts-wrapper.tar.gz",
+    "fetchSpec": "https://github.com/Changdao/react-native-charts-wrapper/releases/download/0.5.5b/react-native-charts-wrapper.tar.gz"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://github.com/Changdao/react-native-charts-wrapper/releases/download/0.5.5b/react-native-charts-wrapper.tar.gz",
+  "_shasum": "8f70a841253a8757d3b50a7433ad91eb1b4bbbef",
+  "_spec": "react-native-charts-wrapper@https://github.com/Changdao/react-native-charts-wrapper/releases/download/0.5.5b/react-native-charts-wrapper.tar.gz",
+  "_where": "/Users/nevernew/Projects/peatio.js/titanex.mobile",
+  "author": {
+    "name": "wuxudong"
+  },
+  "bugs": {
+    "url": "https://github.com/wuxudong/react-native-charts-wrapper/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "prop-types": "^15.5.10",
+    "react": "16.8.3"
+  },
+  "deprecated": false,
   "description": "A react-native charts support both android and ios.",
-  "author": "wuxudong",
-  "license": "MIT",
-  "nativePackage": true,
+  "files": [
+    "android",
+    "ios",
+    "lib",
+    "index.js",
+    "RNCharts.podspec"
+  ],
+  "gitHead": "83b4b42c5c99d1f1772a0c90663a652183cf4cda",
   "homepage": "https://github.com/wuxudong/react-native-charts-wrapper",
   "keywords": [
     "react native",
@@ -18,15 +56,12 @@
     "ios",
     "Charts"
   ],
-  "files": [
-    "android",
-    "ios",
-    "lib",
-    "index.js",
-    "RNCharts.podspec"
-  ],
-  "dependencies": {
-    "prop-types": "^15.5.10",
-    "react": "16.8.3"
-  }
+  "license": "MIT",
+  "name": "react-native-charts-wrapper",
+  "nativePackage": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wuxudong/react-native-charts-wrapper.git"
+  },
+  "version": "0.5.5"
 }
