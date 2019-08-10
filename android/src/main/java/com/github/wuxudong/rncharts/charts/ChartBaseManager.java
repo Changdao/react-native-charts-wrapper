@@ -453,7 +453,7 @@ public abstract class ChartBaseManager<T extends Chart, U extends Entry> extends
                 if (BridgeUtils.validate(propMap, ReadableType.Number, "since")) {
                     since = (long) propMap.getDouble("since");
                 }
-                int timeUnit = 60000;
+                long timeUnit = 60000;
 
                 if (BridgeUtils.validate(propMap, ReadableType.String, "timeUnit")) {
                     timeUnit = Long.parseLong(propMap.getString("timeUnit").toUpperCase());

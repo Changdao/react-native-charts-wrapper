@@ -16,9 +16,9 @@ public class StockFormatter extends ValueFormatter {
 
     private long since = 0;
 
-    private int timeUnit;
+    private long timeUnit;
 
-    public StockFormatter(String pattern, long since, int timeUnit) {
+    public StockFormatter(String pattern, long since, long timeUnit) {
         mFormat = new SimpleDateFormat(pattern);
 
         this.since = since;
