@@ -456,7 +456,7 @@ public abstract class ChartBaseManager<T extends Chart, U extends Entry> extends
                 int timeUnit = 60000;
 
                 if (BridgeUtils.validate(propMap, ReadableType.String, "timeUnit")) {
-                    timeUnit = Integer.parseInt(propMap.getString("timeUnit").toUpperCase());
+                    timeUnit = Long.parseLong(propMap.getString("timeUnit").toUpperCase());
                 }
                 axis.setValueFormatter(new StockFormatter(valueFormatterPattern,since,timeUnit));
             }
